@@ -1,0 +1,6 @@
+{
+  "name": "CardsPage",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./cardsPage.js"
+}

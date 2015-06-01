@@ -7,6 +7,7 @@ import withStyles from '../../decorators/withStyles'; // eslint-disable-line no-
 import AppActions from '../../actions/AppActions';
 import AppStore from '../../stores/AppStore';
 import Header from '../Header';
+import CardsPage from '../CardsPage';
 import ContentPage from '../ContentPage';
 import ContactPage from '../ContactPage';
 import LoginPage from '../LoginPage';
@@ -47,6 +48,10 @@ class App {
       case '/privacy':
         let page = AppStore.getPage(this.props.path);
         component = React.createElement(pages[page.component], page);
+        break;
+
+      case '/cards':
+        component = <CardsPage />;
         break;
 
       case '/contact':
